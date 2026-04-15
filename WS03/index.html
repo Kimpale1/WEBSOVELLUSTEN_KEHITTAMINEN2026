@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>My First HTML Page</title>
+          <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Tervetuloa sivulleni :)</h1>
+        <p>Nimeni on Kimi. Olen 24-vuotias IT-alan opiskelija. Tässä on nettisivu harjoitteeni.</p>
+        <img src="images/omanaama.png" width="249" height="442" alt="Sample Image" class="filter-image">
+
+    <button class="transition-button">Hover me</button>
+<div class="animation-box"></div>
+
+<blockquote class="quote">
+    Elämä on ihmisen parasta aikaa :D
+</blockquote>
+
+<h2>Harrastukset</h2>
+    <ul class="pseudo-list">
+        <li>Juoksu</li>
+        <li>Skeittaus</li>
+        <li>Kuntosali</li>
+         <li>Musa</li>
+
+    </ul>
+    <h2>Minun lempi nettisivuni :</h2>
+
+    <a href="https://www.youtube.com">Youtube</a>
+
+<table>
+    <tr>
+        <th>Tänhetkiset kurssit</th>
+        <th>Lähitulevaisuuden kurssit</th>
+    </tr>
+        <td>Websivusto kehittäminen</td>
+       <td>Ethical hacking</td>
+    </tr>
+    <tr>
+        <td>Linux-perusteet</td>
+        <td>Social corporate responsibility</td>
+    </tr>
+    <td>Professional communication in english</td>
+    <td>Tekoälyn perusteet</td>
+    </table>
+    <form>
+    <label for="Name">Nimi:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Sähköposti</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="kommentti">Kommentti</label>
+    <input type="kommentti" id="asia" name="kommentti"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+<p>Kiitos vierailusta sivullani!</p>
+<h1 style="color: red;">Toivon sinulle mukavaa päivänjatkoa!</h1>
+<style>
+    h1 {
+      color: green;
+    }
+    .transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 1.5s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+.pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+
+
+
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+
+
+.quote {
+        position: relative;
+        padding-left: 20px;
+        font-size: 50px;
+        font-style: italic;
+      }
+      
+ .quote::before {
+    content: "“";
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: black;
+}
+      }
+
+    </style>
+
+    
+
+
+
+
+
+ </body>
+ </html>
