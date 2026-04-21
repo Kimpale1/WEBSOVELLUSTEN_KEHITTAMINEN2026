@@ -73,7 +73,7 @@ body {
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-width: flex;
+width: 300px;
 }
 
 .grid-title {
@@ -345,7 +345,7 @@ width: 500px;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-width: flex;
+width: 300px;
  align-self: flex-start;
 }
 .alone-box {
@@ -422,7 +422,7 @@ td {
         to {
           left: 100px;
         }
-      }
+
         .responsive-box {
   padding: 20px;
   text-align: center;
