@@ -23,9 +23,9 @@
 
 
 
-
- <nav class="nav">
-    <ul>
+<nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
    <li><a href="index.html" class="active">Koti</a></li>
    <li><a href="Yleinen.html">Yleinen</a></li>
 <li><a href="Yhteydenotto.html">Yhteydenotto</a></li>
@@ -33,9 +33,7 @@
   </nav>
 </header>
 
-
 <div class="layout">
-
 
 <aside class="grid-panel">
  
@@ -44,14 +42,17 @@
     Harjoitus tekee mestarin, kukaan ei ole seppä syntyessään :)
   </p>
 
-
 </aside>
+
 
    <main class="content">
 
      <h2 class="Findings">Mitä täältä löytää?</h2>
  
-
+<div class="responsive-container">
+      <div class="column">1. Yleinen</div>
+      <div class="column">2. Yhteydenotto</div>
+    </div>
 
 
 
@@ -85,7 +86,9 @@
   </main>
 </div>
 
-<div class="responsive-box">Resize the window to see the effect</div>
+
+<div class="media-query-box">Muokkaa ikkunan kokoa nähdäksesi efektin!</div>
+
 
 <footer>
   <p>@2026 Kimpale verkkosivusto harjoite</p>
