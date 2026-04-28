@@ -493,3 +493,9 @@ td {
         display: block;
       }
     }
+    .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
