@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.5;
+       background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+}
+
+
+.bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+
+
+
+.navbar {
+    padding: 15px 20px;
+    animation: fadeIn 1s ease;
+        background: rgba(255, 255, 255, 0.85);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ff6b9a;
+     transform: translateY(-2px) scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 95, 162, 0.6);
+}
+
+.masthead {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.masthead-content {
+    max-width: 700px;
+    text-align: center;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+
+.masthead h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: skew(-4deg);
+}
+
+
+.masthead p {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-style: italic;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.container p {
+    color: #111;;
+}
+
+
+.next-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #f7fbff;
+    color: #111;
+
+    padding: 12px 18px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    z-index: 999;
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.next-btn:active {
+    transform: translateX(-50%) scale(0.97);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.next-btn:hover {
+    color: #ff6b9a;
+     transform: translateY(-2px) scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 95, 162, 0.6);
+}
+
+@media (min-width: 768px) {
+    .next-btn {
+        left: auto;
+        right: 30px;
+        transform: none;
+    }
+
+    .next-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+
+.tarina-sivu {
+    padding-bottom: 80px;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+    background-color: #f8f9fa; 
+}
+
+.hero h1 {
+    font-size: 4rem;           /* ISOO */
+    font-weight: 600;
+    animation: fadeUp 1s ease;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.video-box {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-life {
+    position: relative;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 {
+    font-size: 4rem;           /* ISOO */
+    font-weight: 600;
+    animation: fadeUp 1s ease;
+}
+section {
+    margin-bottom: 40px;
+}
