@@ -256,3 +256,33 @@ body {
 section {
     margin-bottom: 40px;
 }
+
+#topo-react {
+  animation: fadeIn 0.5s ease;
+   transition: transform 0.2s ease;
+}
+
+#topo-react:hover {
+  transform: scale(1.05);
+}
+
+.topo-btn {
+  background-color: white;
+  color: #2b2b2b;
+  font-size: 1.3rem;
+  padding: 14px 30px;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+}
+
+.topo-btn:hover {
+  color: #ff6b9a;   /* 👈 teksti pinkiksi */
+  transform: scale(1.05);
+}
+
+.topo-btn:active {
+  transform: scale(0.97);
+}
