@@ -8,14 +8,14 @@ function silitaTopoa() {
   btn.style.display = "none";
 
   // 2. näytä reaktio
-  message.innerText = "Töpö kehrää tyytyväisenä 🐱✨";
+  message.innerText = "Töpö kehrää tyytyväisenä ";
   img.classList.remove("d-none");
 
   // 3. ääni
   sound.currentTime = 0;
   sound.play();
 
-  // 4. reset 3 sekunnin päästä
+  // 4. reset
   setTimeout(() => {
     img.classList.add("d-none");
     message.innerText = "";
