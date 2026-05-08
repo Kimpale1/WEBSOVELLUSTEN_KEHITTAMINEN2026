@@ -8,7 +8,7 @@ function silitaTopoa() {
   btn.style.display = "none";
 
   // 2. näytä reaktio
-  message.innerText = "Töpö kehrää tyytyväisenä 😌🐾";
+  message.innerText = "Töpö kehrää tyytyväisenä 🐱✨";
   img.classList.remove("d-none");
 
   // 3. ääni
