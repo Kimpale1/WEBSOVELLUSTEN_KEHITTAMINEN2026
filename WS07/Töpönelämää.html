@@ -231,21 +231,22 @@
 
 </div>
 </section>
-<section class="container py-5">
+<section class="container py-5 text-center">
 
-  <h2 class="text-center mb-3">💌 Kiitos vierailusta Töpö-sivustolla</h2>
+  <h2 class="mb-3">💌 Kiitos vierailusta Töpö-sivustolla</h2>
 
-  <p class="fs-5 text-center mb-4">
+  <p class="fs-5 mb-4">
     Jos Töpö valtasi sinunkin sydämen, anna napista virtuaalisilitys 🐾
   </p>
 
-  <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-
-<button class="topo-btn" onclick="silitaTopoa()">
+<button id="pet-btn" class="topo-btn" onclick="silitaTopoa()">
   Silitä Töpöä 🐾
 </button>
-    <div class="d-flex justify-content-center align-items-center mt-4"
-     style="min-height: 350px;">
+
+  <p id="pet-message" class="mt-3 fs-5"></p>
+
+  <div style="min-height: 260px;"
+       class="d-flex justify-content-center align-items-center mt-4">
 
     <img id="topo-react"
          src="./assets/mp4/IMG_2843.PNG"
@@ -254,9 +255,6 @@
          alt="Töpö kehrää">
 
   </div>
-  </div>
-
-  <p id="pet-message" class="mt-3 fs-5 text-center"></p>
 
 </section>
     

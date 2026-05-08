@@ -260,6 +260,12 @@ section {
 #topo-react {
   animation: fadeIn 0.5s ease;
    transition: transform 0.2s ease;
+     animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 #topo-react:hover {
@@ -276,6 +282,7 @@ section {
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+  margin-bottom: 10px;
 }
 
 .topo-btn:hover {
@@ -286,3 +293,4 @@ section {
 .topo-btn:active {
   transform: scale(0.97);
 }
+
