@@ -100,7 +100,6 @@ body {
     padding: 20px;
 }
 
-
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;
@@ -108,11 +107,6 @@ body {
         gap: 15px;
     }
 }
-
-.container p {
-    color: #111;;
-}
-
 
 .next-btn {
     position: fixed;
@@ -200,17 +194,6 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
-
-.video-box {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.video-box video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
 .card video {
     width: 100%;
     height: auto;
@@ -249,7 +232,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4rem;           /* ISOO */
+    font-size: 4rem;    
     font-weight: 600;
     animation: fadeUp 1s ease;
 }
@@ -258,7 +241,6 @@ section {
 }
 
 #topo-react {
-  animation: fadeIn 0.5s ease;
    transition: transform 0.2s ease;
      animation: pop 0.3s ease;
      margin-bottom: 100px;
@@ -287,7 +269,7 @@ section {
 }
 
 .topo-btn:hover {
-  color: #ff6b9a;   /* 👈 teksti pinkiksi */
+  color: #ff6b9a; 
   transform: scale(1.05);
 }
 
